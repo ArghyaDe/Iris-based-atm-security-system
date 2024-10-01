@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TransactionFailedController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: #FFFFFF;" VBox.vgrow="ALWAYS">
+      <children>
+            <ImageView fitHeight="407.0" fitWidth="1417.0" layoutX="-1.0" layoutY="153.0" opacity="0.2" pickOnBounds="true">
+               <image>
+                  <Image url="@../Images/Customer_Login_Page.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="71.0" fitWidth="123.0" layoutX="319.0" layoutY="41.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Images/Spiral_logo.jpg" />
+               </image>
+            </ImageView>
+            <VBox layoutY="-1.0" prefHeight="47.0" prefWidth="1280.0" style="-fx-background-color: #5500D5;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+            <Label layoutX="407.0" layoutY="46.0" prefHeight="47.0" prefWidth="511.0" text="GENERIC BANK ATM LOGIN SYSTEM">
+               <font>
+                  <Font name="Century Schoolbook" size="26.0" />
+               </font>
+            </Label>
+            <VBox layoutY="106.0" prefHeight="47.0" prefWidth="1280.0" style="-fx-background-color: #5500D5;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+            <Label layoutX="716.0" layoutY="84.0" minHeight="16" minWidth="69" text="💫Powered by Boimetric IRIS authentication System" textFill="#ff2200c3" />
+            <Label alignment="CENTER" layoutX="444.0" layoutY="154.0" prefHeight="47.0" prefWidth="397.0" text="SORRY! TRANSACTION FAILED">
+               <font>
+                  <Font name="Century Schoolbook" size="24.0" />
+               </font>
+            </Label>
+            <VBox layoutY="559.0" prefHeight="47.0" prefWidth="1280.0" style="-fx-background-color: #AAFF2A;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+            <VBox layoutY="641.0" prefHeight="79.0" prefWidth="1280.0" style="-fx-background-color: #AAFF2A;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+            <Text layoutX="6.0" layoutY="620.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOTE: This page is only for the accountholder to login to the transaction page, using biometric authentication system for successful authentication and seamless transaction. IMPORTANT: In case of any technical ERROR, kindly contact the Technical Management Team(TMT)" wrappingWidth="1176.3333740234375" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="97.6666259765625" />
+            <Label layoutX="288.0" layoutY="247.0" prefHeight="47.0" prefWidth="709.0" text="THANK YOU FOR USING GENERIC BANK ATM SYSTEM ">
+               <font>
+                  <Font name="Century Schoolbook" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="304.0" layoutY="449.0" prefHeight="17.0" prefWidth="659.0" text="An SMS notification has been sent to your registered mobile number.">
+               <font>
+                  <Font name="Century Schoolbook" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="534.0" layoutY="482.0" prefHeight="25.0" prefWidth="196.0" text="Please visit again👐">
+               <font>
+                  <Font name="Century Schoolbook" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="141.0" fitWidth="139.0" layoutX="562.0" layoutY="301.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/wrong_cross_clip_art_17112.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="554.0" layoutY="210.0" prefHeight="32.0" prefWidth="155.0" text="Reason of Failure" textAlignment="CENTER" textFill="#ee0606">
+               <font>
+                  <Font name="Century Schoolbook" size="18.0" />
+               </font>
+            </Label>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

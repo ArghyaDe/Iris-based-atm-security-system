@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TransactionAuthenticationController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: #FFFFFF;" VBox.vgrow="ALWAYS">
+      <children>
+            <ImageView fitHeight="408.0" fitWidth="1280.0" layoutX="-1.0" layoutY="153.0" opacity="0.2" pickOnBounds="true">
+               <image>
+                  <Image url="@../Images/Customer_Login_Page.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="71.0" fitWidth="123.0" layoutX="319.0" layoutY="41.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Images/Spiral_logo.jpg" />
+               </image>
+            </ImageView>
+            <VBox layoutY="-1.0" prefHeight="47.0" prefWidth="1280.0" style="-fx-background-color: #5500D5;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+            <Label layoutX="407.0" layoutY="46.0" prefHeight="47.0" prefWidth="511.0" text="GENERIC BANK ATM LOGIN SYSTEM">
+               <font>
+                  <Font name="Century Schoolbook" size="26.0" />
+               </font>
+            </Label>
+            <VBox layoutY="106.0" prefHeight="47.0" prefWidth="1280.0" style="-fx-background-color: #5500D5;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+            <Label layoutX="716.0" layoutY="84.0" minHeight="16" minWidth="69" text="💫Powered by Boimetric IRIS authentication System" textFill="#ff2200c3" />
+            <Label layoutX="399.0" layoutY="231.0" prefHeight="47.0" prefWidth="511.0" text="WELCOME TO THE TRANSACTION PAGE">
+               <font>
+                  <Font name="Century Schoolbook" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnNext" layoutX="438.0" layoutY="413.0" mnemonicParsing="false" onAction="#Next" prefHeight="25.0" prefWidth="85.0" text="NEXT" />
+            <Button fx:id="btnexit" layoutX="675.0" layoutY="413.0" mnemonicParsing="false" onAction="#Exit" prefHeight="25.0" prefWidth="189.0" text="EXIT TRANSACTION" />
+            <VBox layoutY="559.0" prefHeight="47.0" prefWidth="1280.0" style="-fx-background-color: #AAFF2A;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+            <VBox layoutY="641.0" prefHeight="79.0" prefWidth="1280.0" style="-fx-background-color: #AAFF2A;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+            <Text layoutX="6.0" layoutY="620.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOTE: This page is only for the accountholder to login to the transaction page, using biometric authentication system for successful authentication and seamless transaction. IMPORTANT: In case of any technical ERROR, kindly contact the Technical Management Team(TMT)" wrappingWidth="1176.3333740234375" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="97.6666259765625" />
+            <GridPane layoutX="438.0" layoutY="306.0" prefHeight="90.0" prefWidth="427.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label prefHeight="43.0" prefWidth="220.0" text="Choose your bank Account:" GridPane.halignment="CENTER">
+                     <font>
+                        <Font name="Century Schoolbook" size="16.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="cboxAccountPicker" onAction="#SelectAccuntNo" prefHeight="25.0" prefWidth="213.0" promptText="SELECT BANK ACCOUNT" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                  <Label prefHeight="43.0" prefWidth="220.0" text="Enter Amount:" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Century Schoolbook" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtAmount" prefHeight="25.0" prefWidth="189.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label prefHeight="43.0" prefWidth="220.0" text="Enter Secret Key:" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Century Schoolbook" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtSecretKey" prefHeight="25.0" prefWidth="189.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+            <Button fx:id="btnReset" layoutX="552.0" layoutY="413.0" mnemonicParsing="false" onAction="#Reset" prefHeight="25.0" prefWidth="96.0" text="RESET ALL" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
